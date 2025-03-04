@@ -1,0 +1,119 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header con logo y navegación */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+    padding: 15px;
+}
+
+header img {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Sección "Quiénes Somos" */
+.quienes-somos {
+    background-image: url('fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Sección "Servicios" */
+.servicios {
+    background-color: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+}
+
+.servicios-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.servicio {
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.servicio img {
+    width: 100%;
+}
+
+/* Sección "Reservar Cita" */
+.reservar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ddd;
+    padding: 50px;
+}
+
+.boton-container button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Sección "Nuestros Convenios" */
+.convenios {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e0e0e0;
+    padding: 50px;
+}
+
+.logos {
+    display: flex;
+    gap: 10px;
+}
+
+.logos img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.redes {
+    display: flex;
+    gap: 10px;
+}
+
+.red img {
+    width: 30px;
+}
