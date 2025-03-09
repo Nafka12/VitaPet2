@@ -75,7 +75,9 @@ nav a {
 }
 
 .servicio img {
-    width: 100%;
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
 }
 
 /* Sección "Reservar Cita" */
@@ -129,10 +131,10 @@ nav a {
 }
 
 .logos img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 50px;
     background-color: black
 }
 
