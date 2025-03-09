@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Beauty&Cita</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+</head>
+<body class="container hide-on-med-and-up teal accent-2">
+    <div class="card white z-depth-3">
+        <div class="card-content center-align">
+            <img src="/img/vitapet-8.png" alt="logo" class="responsive-img">
+            <h4>Agenda tu cita</h4>
+            
+            <div class="input-field">
+                <input type="text" id="nombreCita" placeholder="Nombre">
+            </div>
+            
+            <div class="input-field">
+                <select id="tipoServicio">
+                    <option value="consulta-medica">Consulta Médica</option>
+                    <option value="consulta-estetica">Consulta de Estética</option>
+                    <option value="hotel">Servicio de Hotel</option>
+                </select>
+                <label>Selecciona un servicio</label>
+            </div>
+
+            <div class="input-field">
+                <input type="date" id="fechaCita">
+                <label>Fecha de entrada</label>
+            </div>
+
+            <div class="input-field" id="horaContainer">
+                <input type="time" id="horaCita">
+                <label>Hora (solo consultas)</label>
+            </div>
+
+            <div class="input-field" id="fechaSalidaContainer" style="display: none;">
+                <input type="date" id="fechaSalida">
+                <label>Fecha de salida</label>
+            </div>
+
+            <button class="btn-large teal accent-3 waves-effect waves-light" onclick="agregarCita()">Agregar Cita</button>
+            
+            <div id="mensajeError" class="red-text center-align" style="display: none;"></div>
+        </div>
+    </div>
+
+    <div class="center-align">
+        <button id="btnReservas" class="btn-large light-green darken-3 darken-4 waves-effect waves-light" onclick="toggleReservas()">Ver reservas</button>
+        <ul id="listadoCitas" class="collection" style="display: none;"></ul>
+    </div>
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="toDoTareas.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var elems = document.querySelectorAll('select');
+            M.FormSelect.init(elems);
+        });
+    </script>
+</body>
+</html>
